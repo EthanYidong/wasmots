@@ -24,3 +24,6 @@ members = [
     "wasmots-client",
     "example/*"
 ]
+exclude = [
+    "example/example-wasm"
+]

@@ -12,11 +12,11 @@ WASM can also run anywhere, but it's lighter than docker. As WASI matures and ga
 
 To run example: 
 
-`cargo build -p example-wasm --target wasm32-wasi --release` 
+`cd example/example-wasm && cargo build -p example-wasm --target wasm32-wasi --release` 
 
 to build the WASM file, then
 
-`cargo run -p example-server`
+`cd <crate root> && cargo run -p example-server`
 
 In another window, run
 

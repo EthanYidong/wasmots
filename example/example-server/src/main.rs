@@ -23,7 +23,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         })?);
     }
 
-    let wasm_bytes = std::fs::read("./target/wasm32-wasi/release/example_wasm.wasm")?;
+    let wasm_bytes = std::fs::read("./example/example-wasm/target/wasm32-wasi/release/example_wasm.wasm")?;
 
     let (tx, mut rx) = tokio::sync::mpsc::channel::<Vec<u8>>(32);
 
