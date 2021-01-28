@@ -1,0 +1,20 @@
+[package]
+name = "wasmots-client"
+description = "client for wasmots"
+version = "0.1.0"
+authors = ["EthanYidong <ethanyidong@gmail.com>"]
+edition = "2018"
+license = "MIT"
+documentation = "https://docs.rs/wasmots"
+homepage = "https://github.com/EthanYidong/wasmots"
+repository = "https://github.com/EthanYidong/wasmots"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasmer = "1.0"
+wasmer-wasi = "1.0"
+
+ureq = "2.0"
+
+structopt = "0.3"

@@ -1,0 +1,26 @@
+[package]
+name = "wasmots"
+description = "wasm on the side - run wasm on other people's computers, what fun!"
+version = "0.1.0"
+authors = ["EthanYidong <ethanyidong@gmail.com>"]
+edition = "2018"
+license = "MIT"
+documentation = "https://docs.rs/wasmots"
+homepage = "https://github.com/EthanYidong/wasmots"
+repository = "https://github.com/EthanYidong/wasmots"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+warp = "0.3"
+
+crossbeam-queue = "0.3"
+
+serde = "1.0"
+
+[workspace]
+members = [
+    "wasmots-client",
+    "example/*"
+]
